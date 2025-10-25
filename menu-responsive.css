@@ -1,0 +1,62 @@
+/* ======= Mega Menu ======= */
+
+/* عمومی */
+.mega-dropdown {
+  position: relative;
+}
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: none;
+  flex-wrap: wrap;
+  z-index: 100;
+  border: 1px solid #eee;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.mega-menu .col-md-3 {
+  margin-bottom: 15px;
+}
+.mega-menu a {
+  display: block;
+  padding: 4px 0;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mega-menu a:hover {
+  color: #d32f2f;
+}
+.mega-menu .row.g-2 .col-6 img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* دسکتاپ */
+@media (min-width: 992px) {
+  .mega-dropdown:hover > .mega-menu {
+    display: flex !important;
+  }
+}
+
+/* موبایل */
+@media (max-width: 991px) {
+  .mega-menu {
+    position: static;
+    display: none !important;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: none;
+  }
+  .mega-dropdown.show > .mega-menu {
+    display: flex !important;
+  }
+}
+
+/* Navbar toggle button */
+.navbar-toggler {
+  display: inline-block;
+}

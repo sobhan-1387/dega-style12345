@@ -1,0 +1,24 @@
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: block;
+}
+
+footer .col-md-3 {
+  width: 23%;
+}
+
+@media (max-width: 768px) {
+  footer .col-md-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.row.text-center.my-3 h6 i {
+  margin-left: 8px;
+}
